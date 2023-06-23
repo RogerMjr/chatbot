@@ -16,7 +16,7 @@ def ask_openai(message):
         temperature=0.7,
     )
     print(response)
-    answer = response.choice[0].text.strip()
+    answer = response.choices[0].text.strip()
     return answer
 
 def chatbot_app(request):
